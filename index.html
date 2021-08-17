@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark full-height">
+        <!-- field to display the remaining amount -->
+        <div class="display-feild pt-2">
+            <div class="card">
+                <div class="card-body">
+                    <span class="current-bal font-weight-bold text-primary font-large" id="currentBal">₹0</span>
+                    <br>
+                    <span class="added-bal float-start pt-2 text-success" id="balIn">+ ₹0</span>
+                    <div>
+                        <span class="withdrawn-bal float-end pt-2 text-danger" id="balOut">- ₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- field to display the transactions -->
+        <div class="trans-field card text-white pt-2 mt-2">
+            <div class="card-body" id="transList">
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-dark bg-primary fixed-navbar">
+        <!-- <span class="navbar-brand mb-0 h1">Navbar</span> -->
+        <a href="#" class="text-white font-weight-bold btn-nav-action ms-2 p-1">MoneyManager</a>
+    </nav>
+    <!-- button to add amount -->
+    <div class="addbtn text-center btn-add">
+        <br>
+        <a href="add_transaction.html"><button class="bg-primary btn-fab"><span class="btn-fab-icon text-dark">+</span></button></a>
+    </div>
+</body>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery-3.6.0.js"></script>
+<script src="transactions.js"></script>
+<script src="index.js"></script>
+
+</html>
