@@ -33,7 +33,7 @@ function showListItems() {
         <span class="description">${allTrans[i].notes}</span>
         <br>
         <span class="float-start pt-2 text-white">${Number(allTrans[i].amount) > 0 ? "+" : "-"}₹${Math.abs(Number(allTrans[i].amount))}</span>
-        <button class="btn btn-danger float-end ms-2" onclick="deleteTransItem(${i})">Delete</button>
+        <button class="btn btn-sm btn-danger float-end ms-2" onclick="deleteTransItem(${i})">Delete</button>
         <span class="float-end pt-2 text-white">${allTrans[i].date}</span>
         <br>
         <br>
